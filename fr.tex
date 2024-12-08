@@ -1,8 +1,8 @@
 %------------------------
-% Resume Template
-% Author : Anubhav Singh
+% Modèle de CV
+% Auteur : Anubhav Singh
 % Github : https://github.com/xprilion
-% License : MIT
+% Licence : MIT
 %------------------------
 
 \documentclass[a4paper,20pt]{article}
@@ -18,12 +18,12 @@
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{} % Efface tous les champs d'en-tête et de pied de page
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Ajustement des marges
 \addtolength{\oddsidemargin}{-0.530in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
@@ -36,13 +36,13 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Formatage des sections
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
-% Custom commands
+% Commandes personnalisées
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -63,7 +63,6 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -74,135 +73,129 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-----------------------------
-%%%%%%  CV STARTS HERE  %%%%%%
+%%%%%%  LE CV COMMENCE ICI  %%%%%%
 
 \begin{document}
 
-%----------HEADING-----------------
+%----------EN-TÊTE-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Mohamed Youssef Chlendi}} & Email: \href{mailto:}{youssef.chlendi@gmail.com}\\
+  \textbf{{\LARGE Mohamed Youssef Chlendi}} & Email : \href{mailto:}{youssef.chlendi@gmail.com}\\
   &
-   Mobile:~~~+216 22 079 448 \\
-  \href{https://github.com/youssefchlendi}{Github: ~~github.com/youssefchlendi} \\
+   Mobile :~~~+216 22 079 448 \\
+  \href{https://github.com/youssefchlendi}{Github : ~~github.com/youssefchlendi} \\
   
-  \href{https://www.linkedin.com/in/mohamed-youssef-chlendi/}{LinkedIn: ~~Mohamed Youssef Chlendi}
+  \href{https://www.linkedin.com/in/mohamed-youssef-chlendi/}{LinkedIn : ~~Mohamed Youssef Chlendi}
 \end{tabular*}
 
-%-----------EDUCATION-----------------
-\section{~~Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Institut supérieur des études technologiques}{Bizerte, tunis}
-      {Licence en technologie des systèmes d'information}{Sept 2020 - Juin 2023}
-      
-    \resumeSubHeadingListEnd
+
 	    
 \vspace{-5pt}
-\section{Sommaire des compétences}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~~~~~~~PHP, JavaScript, TypeScript, Java, Python, SQL, HTML, CSS, C, C\#, Dart, Kotlin}
-	\resumeSubItem{Frameworks}{~~~~~~~~~~Laravel, Symfony, Spring Boot, ExpressJs,  Flutter, .NET 5, LAMP, VueJs, Angular 10, Ionic, Bootstrap}
-	\resumeSubItem{Outils}{~~~~~~~~~~~~~~~~~~~~GIT, MySQL, POSTMAN, GitHub, ZenHub, Azure DevOps, Firebase , Figma, Adobe Illustrator }
-  \resumeSubItem{Bases de données}{~~~~MySQL, MongoDB, Microsoft SQL Server}
-	\resumeSubItem{Système d'exploitation}{~~Linux(Debian), Windows}
-	\resumeSubItem{Soft Skills}{~~~~~~~~~~~~~Leadership, Event Management, Time Management}
-	\resumeSubItem{Méthodologie}{~~~~~~~~Scrum}
-
+\section{Résumé des Compétences}
+\resumeSubHeadingListStart
+\resumeSubItem{Langages}{~~~~~~~~~~~~PHP, JavaScript, TypeScript, Java, Python, SQL, HTML, CSS, C, C\#, Dart, Kotlin}
+\resumeSubItem{Frameworks}{~~~~~~~~~~Laravel, Symfony, Spring Boot, ExpressJs, Flutter, React Native, .NET MAUI, .NET 5, LAMP, VueJs, Angular 10, Ionic, Bootstrap}
+\resumeSubItem{Outils}{~~~~~~~~~~~~~~~~~~~~GIT, MySQL, POSTMAN, GitHub, ZenHub, Azure DevOps, Firebase, Figma, Adobe Illustrator, GDPicture, WebSockets}
+\resumeSubItem{Bases de Données}{~~~~~~~~~~~~~~MySQL, MongoDB, SQL Server}
+\resumeSubItem{Systèmes d’Exploitation}{~~Linux (Debian), Windows, macOS}
+\resumeSubItem{Compétences Transversales}{~~~~~~~~~~~~~Leadership, Gestion d’événements, Gestion du temps}
+\resumeSubItem{Méthodologie}{~~~~~~~~Scrum}
 \resumeSubHeadingListEnd
-\vspace{-5pt}
-\section{Expérience}
-  \resumeSubHeadingListStart
 
-\resumeSubheading{ NeoLedge, Zarzis, Tunisie  }{}
-    {Développeur Mobile (Stage de fin d'études)}{Fév 2023 - Mai 2023}
-    \resumeItemListStart
-        \resumeItem{}
-          {Contribuer à la création d'une application mobile multiplateforme pour la gestion et la signature de documents électroniques.}
-          \resumeItem{}
-          {Création de NeoPDFViewer, une visionneuse de fichiers open-source, pour une visualisation transparente des documents et une interaction au sein de l'application.}
-      \resumeItemListEnd
-        {Technologies: Développement mobile, Capacitor, Jest, Firebase, Framework Ionic, TypeScript, JavaScript, Scrum, Agile, Microsoft Azure }
-        
+%----------EXPÉRIENCES-----------------
 \vspace{-5pt}
-\resumeSubheading{ NeoLedge, Zarzis, Tunisie  }{Hybride}
-    {Développeur FrontEnd (Stage)}{Juil 2022 - Nov 2022}
-    \resumeItemListStart
-        \resumeItem{}
-          {Contribuer au paquet NUI existant en créant de nouveaux composants qui seront utilisés dans les futurs projets NeoLedge.}
-          \resumeItem{}
-          {Contribuer au développement d'une nouvelle application d'enquête pour l'entreprise.}
-      \resumeItemListEnd
-        {Technologies: Vue 2.6/3, IonicVue, TypeScript, StoryBook, CSS, github, Scrum, Agile, Microsoft Azure, C\#, .NET 5}
-        
+\section{Expériences Professionnelles}
+\resumeSubHeadingListStart
 \vspace{-5pt}
-    \resumeSubheading{ Scouts, Zarzis, Tunisie  }{Remote}
-    {Développeur FullStack/Product Owner }{Juil 2022 - Août 2022}
+\resumeSubheading{NeoLedge, Zarzis, Tunisie}{À distance}
+    {Développeur Logiciel}{Mai 2023 - Présent}
     \resumeItemListStart
-        \resumeItem{Analyse des besoins}
-          {Analyse du système actuel et mise en évidence de ses failles.}
-          \resumeItem{Managment}
-          {Création de user stories, gestion et hiérarchisation du backlog du produit..}
-          \resumeItem{Développement}
-          {développer et créer des parties du système tout en maintenant des normes élevées de qualité du code .}
-          
-      \resumeItemListEnd
-        {Technologies: NuxtJs, Scrum, Agile, Vuetify, TypeScript, Laravel9, github, ZenHub, GitHub Ci/Cd Actions}
-        
-\vspace{-5pt}
- \resumeSubheading{ TunVita  }{Remote}
-    {Développeur FullStack (Stage)}{Janv 2022 - Févr 2022}
-    \resumeItemListStart
-        \resumeItem{Planification et analyse des besoins}
-          {Examiner le système actuel de gestion des employés et trouver les failles.}
-          \resumeItem{Conception du système}
-          {Concevoir le cas d'utilisation, la classe et tous les diagrammes nécessaires.}
-          \resumeItem{Développement}{Développement de l'application à l'aide de la pile Laravel/Vue tout en maintenant des normes élevées de qualité du code et une conception réfléchie de l'application.}
-      \resumeItemListEnd
-        {Technologies: Laravel 8, Vue 2.6, JavaScript, Bootstrap-vue, github}
-        
-\vspace{-5pt}
+        \resumeItem{Applications Mobiles d'Entreprise}
+          {Développement et maintenance d'applications mobiles d'entreprise, intégration des services web SOAP pour une communication backend transparente.}
+        \resumeItem{Système de Signature PDF}
+          {Conception et implémentation d'une CLI pour signer des fichiers PDF conformément à la norme PADES-B à l'aide de GDPicture.}
+        \resumeItem{Boîte à Outils Multi-Plateformes}
+          {Création et publication d'une boîte à outils enveloppant la CLI pour Windows et macOS, garantissant la compatibilité avec les architectures ARM et Intel.}
+        \resumeItem{Développement d'Installateurs}
+          {Création d'installateurs pour la boîte à outils et ses dépendances, permettant un déploiement fluide sur Windows et macOS.}
+        \resumeItem{Intégration d'Extensions Web}
+          {Développement d'un système pour rendre la CLI accessible depuis des applications web via des hôtes de messagerie natives et des extensions compatibles avec les principaux navigateurs.}
+        \resumeItem{Pipeline CI/CD}
+          {Mise en place et maintenance de pipelines CI/CD avec Azure DevOps pour une intégration et un déploiement fluide des nouvelles fonctionnalités.}
+        \resumeItem{Système de Signature Électronique}
+          {Intégration de l'extension dans une application web pour permettre la signature électronique de documents en ligne.}
+        \resumeItem{Certification et Conformité}
+          {Facilitation de l'homologation des applications via des tests rigoureux et adaptations aux normes eIDAS, avec certification obtenue par TunTrust et ANCE Tunisie.}
+        \resumeItem{Recherche en Intégration Système}
+          {Réalisation de recherches approfondies pour identifier des solutions optimales pour connecter les applications web aux environnements de bureau. Les solutions évaluées comprennent :
+            \begin{itemize}
+              \item Communication basée sur URI pour une intégration simple et flexible.
+              \item Communication HTTPS côté client pour un échange de données sécurisé et robuste.
+              \item Communication WebSocket pour des interactions bidirectionnelles en temps réel.
+            \end{itemize}
+          }
+        \resumeItem{R&D pour la Modernisation d'Applications Mobiles}
+          {Conduite d'une étude pour migrer une application mobile Xamarin vers une nouvelle technologie. Évaluation des options suivantes :
+            \begin{itemize}
+              \item \textbf{Flutter :} Rapidité de développement, fonctionnalité de rechargement à chaud et prise en charge multi-plateforme.
+              \item \textbf{React Native :} Large écosystème, forte communauté et performance via des modules natifs.
+              \item \textbf{.NET MAUI :} Intégration au sein de l'écosystème .NET, compatibilité ascendante et adaptée aux solutions d'entreprise.
+            \end{itemize}
+          Un rapport détaillé des avantages et inconvénients a été présenté à la direction.}
+    \resumeItemListEnd
+        {Technologies : C\#, .NET Core, Développement CLI, Développement Desktop, Développement d'Extensions, Signature Électronique, Développement Web, Vue.js, Azure DevOps, Microsoft Azure}
+\resumeSubHeadingListEnd
 
-   
-        \resumeSubHeadingListEnd
+%----------ÉDUCATION-----------------
+\vspace{-5pt}
+\section{Formation}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Institut Supérieur d’Informatique}{Ariana, Tunisie}
+    {Master en Ingénierie Logicielle Open Source}{Sep 2023 - Juin 2025}
+    \resumeSubheading
+    {Institut Supérieur des Études Technologiques}{Bizerte, Tunisie}
+    {Licence en Technologie des Systèmes d’Information, Mention Excellent}{Sep 2020 - Juin 2023}
+\resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
+%----------PROJETS-----------------
 \vspace{-5pt}
 \section{Projets}
 \resumeSubHeadingListStart
-\resumeSubItem{Bike tracking and after sales service}{(Octobre 2022 - 2022 Janvier)
-Contribution au développement de l'application web/mobile pixiimotors, qui est une application permettant au propriétaire d'un scooter de suivre sa moto et de la gérer à distance, et mise en place d'un système après-vente permettant au client de communiquer avec l'entreprise à l'aide d'un système de ticketing.
-\\ Tech: SpringBoot, Nodejs, ExpressJs, MongoDB, Microservice, Angular, Flutter, GitHub }
+\resumeSubItem{Suivi de Vélos et Service Après-Vente}{(Oct 2022 - Jan 2023)
+ Participation au développement de l'application web/mobile Pixii Motors, permettant aux propriétaires de scooters de suivre et gérer leurs motos à distance. Mise en place d'un système après-vente basé sur un système de tickets.
+\\ Tech : SpringBoot, Nodejs, ExpressJs, MongoDB, Microservice, Angular, Flutter, GitHub}
 \vspace{2pt}
-\resumeSubItem{Système de scouts}{(Juil 2022 - 2022 Août)
- Contribution au développement du projet de bénévolat des scouts, qui est une application permettant de gérer l'inscription et l'enregistrement dans l'organisation, de gérer les ressources monétaires/matérielles, et de permettre aux utilisateurs de créer des demandes officielles, de programmer des événements et de gérer leurs groupes.
-\\ Tech: Nuxt, TypeScript, Vuetify, Laravel Zenhub, GitHub }
+\resumeSubItem{Système pour Scouts}{(Juin 2022 - aujourd’hui)
+ Participation au développement d'un projet pour gérer les inscriptions et adhésions, les ressources monétaires et matérielles, les événements, et les groupes des utilisateurs.
+\\ Tech : Nuxt, TypeScript, Vuetify, Laravel, Zenhub, GitHub}
 \vspace{2pt}
-\resumeSubItem{ISETB - Système de gestion scolaire
- }{(Mars 2022 - Juin 2021) 
- Contribution au développement de l'application ISETB, qui permet de gérer toutes les actions qui ont lieu au sein de l'institut, en tant que membre de l'équipe de développement.
- \\\small{Ce projet a été développé dans deux piles technologiques différentes, Laravel/vue and SpringBoot/Thymleaf.}
-\\ 
-Tech: VueJs2, JavaScript, Laravel, SpringBoot, Java, Thymleaf, Scrum, Agile, Zenhub, GitHub }
+\resumeSubItem{ISETB - Système de Gestion Scolaire}{(Mars 2022 - Juin 2021)
+ Contribution au développement de l'application ISETB, permettant de gérer toutes les actions au sein de l’institut.
+ \\\small{Ce projet a été développé avec deux stacks technologiques différents : Laravel/Vue et SpringBoot/Thymeleaf.}
+\\ Tech : VueJs2, JavaScript, Laravel, SpringBoot, Java, Thymeleaf, Scrum, Agile, Zenhub, GitHub}
 \resumeSubHeadingListEnd
 
-%-----------Awards-----------------
-\section{Honneurs et récompenses}
-\begin{description}[font=$\bullet$]
-\item {Certificat d'encouragement - Délivré par le chef du département informatique iset bizerte - Jan 2021}
-\end{description}
+%----------CERTIFICATIONS-----------------
+\vspace{-5pt}
+\section{Certifications}
+\resumeSubHeadingListStart
+\resumeSubItem{Badge Essentials Google Cloud}
+    {Google Cloud Education; Délivré : Février 2022; ID : 1740267}
+    {\href{https://www.cloudskillsboost.google/public_profiles/b6cf5253-6dac-4b50-8a0d-7129daad930b/badges/1740267}{Voir la Certification}}
+\resumeSubItem{Certificat SQL}
+    {Sololearn; Délivré : Février 2022; ID : 20332926-1060}
+    {\href{https://www.sololearn.com/certificates/course/en/20332926/1060/landscape/png}{Voir la Certification}}
+\resumeSubItem{Certificat Scrum Fundamentals}
+    {SCRUMstudy; Délivré : Février 2022; ID : 900581}
+    {\href{https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-MohamedYoussefChlendi-900581.pdf}{Voir la Certification}}
+\resumeSubHeadingListEnd
 
+%----------EXPÉRIENCE BÉNÉVOLE-----------------
 \vspace{-2pt}
-\section{Expérience de bénévolat}
-  \resumeSubHeadingListStart
-	\resumeItem
-    {Vice-Chair}
-    {RAS IEEE ISET Bizerte SB}
-    \resumeItem
-    {Responsable médias et communication}
-    {Tunisian SolidWorks
-Users Group ISET Bizerte}
-   
-\vspace{5pt}
+\section{Expérience Bénévole}
+\resumeSubHeadingListStart
+\resumeItem{Vice-Président}{RAS IEEE ISET Bizerte SB}
+\resumeItem{Responsable Média et Communication}{Tunisian SolidWorks Users Group ISET Bizerte}
 \resumeSubHeadingListEnd
 
 \end{document}
