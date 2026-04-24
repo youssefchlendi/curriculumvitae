@@ -109,17 +109,34 @@
 \vspace{-5pt}
 \resumeSubheading{Capgemini}{À distance}
     {Développeur Senior .NET/Vue}{Septembre 2025 - Présent}
+    
+    \vspace{4pt}
+    \textbf{Projet 1 : Deliverable Progressor (DP) - Gestion de Packages Électroniques intégrée à Teamcenter Siemens} \hfill \textit{Équipe de 3 développeurs}
     \resumeItemListStart
-        \resumeItem{Développement de Solution de Débogage d'Appareils}
-          {Développement d'une nouvelle solution complète pour Electrolux intégrant des capacités de débogage d'appareils électroménagers utilisant des protocoles de communication de bas niveau. La solution permet le diagnostic à distance et le dépannage d'appareils électroménagers via une intégration de protocoles avancés.}
-        \resumeItem{Intégration Cloud Azure}
-          {Implémentation et intégration de diverses solutions Azure incluant Azure Active Directory pour la gestion d'identité, Azure Web Services pour l'hébergement d'applications évolutives, et les files d'attente Azure Service Bus pour une communication inter-services fiable.}
-        \resumeItem{Implémentation de Protocoles de Bas Niveau}
-          {Conception et implémentation de couches de communication utilisant des protocoles de bas niveau pour établir des connexions fiables avec le matériel d'appareils pour la surveillance en temps réel et la collecte de données de diagnostic.}
-        \resumeItem{Conception d'Architecture d'Entreprise}
-          {Contribution à la conception architecturale de solutions de niveau entreprise qui gèrent le traitement de données d'appareils à haut volume et fournissent des expériences utilisateur fluides pour les équipes de support technique.}
+        \resumeItem{Leadership Technique}{Lead technique : mise en place des bonnes pratiques frontend, règles de tests unitaires/intégration et validation des PRs pour garantir la qualité du code.}
+        \resumeItem{Migration Vue 2 vers Vue 3.3}{Direction de la migration vers Vue 3.3 : refactorisation vers la Composition API, mise à jour de l'écosystème et établissement de standards modernes pour l'équipe.}
+        \resumeItem{Client API Teamcenter (Siemens)}{Conception d'un client API Teamcenter avec gestion centralisée des erreurs pour la synchronisation des MCUs, groupes de classification, hiérarchies de pièces (LIB01) et types de logiciels.}
+        \resumeItem{Architecture d'Authentification}{Conception de l'architecture complète basée sur \textbf{Azure AD (Microsoft Entra ID)}, \textbf{OIDC} et \textbf{PBAC}, assurant une gestion fine des permissions par rôle et attribut.}
+        \resumeItem{APIs Backend - Gestion de Packages Logiciels}
+          {Développement des APIs pour la création et gestion de packages : pagination, tri et filtrage avancés multi-critères, migration des relations Item-Package vers du Many-to-Many, gestion des workflows de cycle de vie (état production, permissions de téléchargement liées à l'attribut lifetime).}
+        \resumeItem{Module de Gestion des Composants Logiciels}
+          {Implémentation complète du module des composants logiciels : création indépendante du package, liaison d'items existants post-création, upload automatique avec chemin de fichier configurable, journalisation détaillée et métadonnées enrichies (dates de création/modification, éditeur).}
+        \resumeItem{Supervision DevOps et CI/CD}
+          {Mise en place et maintenance des pipelines CI/CD, optimisation Docker, et gestion de la migration du versioning de Bitbucket vers GitHub avec mise en place des workflows de validation automatique.}
     \resumeItemListEnd
-        {Technologies : .NET Core, Vue.js, Azure AD, Azure Web Services, Azure Service Bus, Protocoles de bas niveau, Architecture d'entreprise, Intégration d'appareils}
+    \vspace{4pt}
+    \textbf{Projet 2 : ATUM - Gestion de Binaires pour Appareils Électroménagers (Electrolux)} \hfill \textit{Équipe de 8 développeurs}
+    \resumeItemListStart
+        \resumeItem{Firmware et OTA}{Développement de l'UI de configuration firmware et génération automatique de binaires ; mise en place du système de distribution de mises à jour OTA.}
+        \resumeItem{Refactorisation Visualiseur STL}{Remplacement de la solution existante par \textbf{Three.js} : réduction du temps de chargement de \textbf{70\%+} (50s → \textasciitilde10s) sur le HOB PowerController.}
+        \resumeItem{Migration .NET 10}{Direction de la migration .NET 9 → .NET 10 avec mise à jour complète des dépendances et adaptation aux nouvelles versions de C\#.}
+        \resumeItem{Infrastructure Azure}{Intégration Azure (Entra ID, Azure Web Services, Portainer) ; conduite d'une étude de migration de l'infrastructure VM Azure vers une architecture cloud native.}
+        \resumeItem{Automatisation du Déploiement}{Pipeline entièrement automatisé via \textbf{Docker, Ansible et CI/CD} (déploiement manuel → quelques minutes) ; migration du versioning de Bitbucket vers GitHub avec évaluation d'Azure DevOps.}
+        \resumeItem{Besoins Clients et Recrutement}{Participation directe aux réunions clients pour extraction et rédaction des specs ; conduite de \textbf{10 entretiens techniques} pour le processus de recrutement.}
+    \resumeItemListEnd
+
+    {Technologies : .NET 9/10, C\# 13, Vue.js 2/3.3, Docker, Ansible, Azure Cloud, Azure AD (Microsoft Entra ID), OIDC, PBAC, SQL Server, Three.js, Teamcenter API (Siemens), GitHub Actions, CI/CD}
+
 
 \resumeSubheading{NeoLedge, Zarzis, Tunisie}{À distance}
     {Développeur Logiciel}{Mai 2023 - Septembre 2025}
@@ -189,11 +206,6 @@
 \resumeSubItem{Système pour Scouts}{(Juin 2022 - aujourd'hui)
  Participation au développement d'un projet pour gérer les inscriptions et adhésions, les ressources monétaires et matérielles, les événements, et les groupes des utilisateurs.
 \\ Tech : Nuxt, TypeScript, Vuetify, Laravel, Zenhub, GitHub}
-\vspace{2pt}
-\resumeSubItem{ISETB - Système de Gestion Scolaire}{(Mars 2022 - Juin 2021)
- Contribution au développement de l'application ISETB, permettant de gérer toutes les actions au sein de l'institut.
- \\\small{Ce projet a été développé avec deux stacks technologiques différents : Laravel/Vue et SpringBoot/Thymeleaf.}
-\\ Tech : VueJs2, JavaScript, Laravel, SpringBoot, Java, Thymeleaf, Scrum, Agile, Zenhub, GitHub}
 \resumeSubHeadingListEnd
 
 %----------CERTIFICATIONS-----------------
@@ -203,12 +215,22 @@
 \resumeSubItem{Badge Essentials Google Cloud}
     {Google Cloud Education; Délivré : Février 2022; ID : 1740267}
     {\href{https://www.cloudskillsboost.google/public_profiles/b6cf5253-6dac-4b50-8a0d-7129daad930b/badges/1740267}{Voir la Certification}}
-\resumeSubItem{Certificat SQL}
-    {Sololearn; Délivré : Février 2022; ID : 20332926-1060}
-    {\href{https://www.sololearn.com/certificates/course/en/20332926/1060/landscape/png}{Voir la Certification}}
 \resumeSubItem{Certificat Scrum Fundamentals}
     {SCRUMstudy; Délivré : Février 2022; ID : 900581}
     {\href{https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-MohamedYoussefChlendi-900581.pdf}{Voir la Certification}}
+\resumeSubItem{Advanced C\# Programming in .NET Core}
+    {Coursera / EDUCBA; Délivré : Novembre 2025}
+    {\href{https://coursera.org/verify/AHZ3PB7VHVW0}{Voir la Certification}}
+\resumeSubItem{Microsoft Azure for ASP.NET Core}
+    {Coursera / Packt; Délivré : Septembre 2025}
+    {\href{https://coursera.org/verify/HTH0OZA64L2Z}{Voir la Certification}}
+\resumeSubItem{Performance Optimization and Scalability}
+    {Coursera / Microsoft; Délivré : Janvier 2026}
+    {\href{https://coursera.org/verify/QW1S6J4EDX8C}{Voir la Certification}}
+\resumeSubItem{AWS Artificial Intelligence Practitioner Learning Plan}
+    {AWS Training \& Certification; Délivré : Septembre 2025}{}
+\resumeSubItem{Aspiring Architect}
+    {Capgemini University; Délivré : Janvier 2026}{}
 \resumeSubHeadingListEnd
 
 %----------EXPÉRIENCE BÉNÉVOLE-----------------
