@@ -18,12 +18,12 @@
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Margin adjustments
 \addtolength{\oddsidemargin}{-0.530in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
@@ -36,7 +36,7 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
@@ -63,7 +63,6 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -74,234 +73,137 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-----------------------------
-%%%%%%  CV STARTS HERE  %%%%%%
+%%%%%%  RESUME STARTS HERE  %%%%%%
 
 \begin{document}
 
-%----------HEADING-----------------
+%----------HEADER-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Mohamed Youssef Chlendi}} & Email: \href{mailto:}{youssef.chlendi@gmail.com}\\
-  &
-   Mobile:~~~+216 22 079 448 \\
-  \href{https://github.com/youssefchlendi}{Github: ~~github.com/youssefchlendi} \\
-  
-  \href{https://www.linkedin.com/in/mohamed-youssef-chlendi/}{LinkedIn: ~~Mohamed Youssef Chlendi}
+  \textbf{{\LARGE Mohamed Youssef Chlendi}} & Email : \href{mailto:youssef.chlendi@gmail.com}{youssef.chlendi@gmail.com}\\
+  & Mobile :~~~+216 22 079 448 \\
+  \href{https://github.com/youssefchlendi}{Github : ~~github.com/youssefchlendi} \\
+  \href{https://www.linkedin.com/in/mohamed-youssef-chlendi/}{LinkedIn : ~~Mohamed Youssef Chlendi}
 \end{tabular*}
 
-
-	    
 \vspace{-5pt}
 \section{Skills Summary}
 \resumeSubHeadingListStart
 \resumeSubItem{Languages}{~~~~~~~~~~~~PHP, JavaScript, TypeScript, Java, Python, SQL, HTML, CSS, C, C\#, Dart, Kotlin, PowerShell}
 \resumeSubItem{Frameworks}{~~~~~~~~~~Laravel, Symfony, Spring Boot, ASP.NET, .NET Core, ExpressJs, Flutter, React Native, .NET MAUI, .NET 4.8, LAMP, VueJs, Angular, Ionic, Bootstrap, React}
-\resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~~GIT, MySQL, POSTMAN, GitHub, ZenHub, Azure DevOps, Firebase, Figma, Adobe Illustrator, GDPicture, WebSockets, Docker, Exchange Server}
-\resumeSubItem{Database}{~~~~~~~~~~~~~~MySQL, MongoDB, SQL Server, PostgreSQL}
-\resumeSubItem{Operating system}{~~Linux(Debian), Windows, macOS}
+\resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~~GIT, POSTMAN, GitHub, ZenHub, Azure DevOps, Firebase, Figma, Adobe Illustrator, GDPicture, WebSockets, Docker, Ansible, Exchange Server}
+\resumeSubItem{Databases}{~~~~~~~~~~~~~~MySQL, MongoDB, SQL Server, PostgreSQL}
+\resumeSubItem{Operating Systems}{~~Linux (Debian), Windows, macOS}
 \resumeSubItem{Soft Skills}{~~~~~~~~~~~~~Leadership, Event Management, Time Management, Client Requirements Analysis, Communication}
 \resumeSubItem{Methodology}{~~~~~~~~Scrum, Agile, DevOps}
-\resumeSubItem{Security}{~~~~~~~~~~~~~~OIDC, OAuth 2.0, Form Authentication, SSO}
+\resumeSubItem{Security}{~~~~~~~~~~~~~~OIDC, OAuth 2.0, Form-based Authentication, SSO}
 \resumeSubHeadingListEnd
 
+%----------EXPERIENCE-----------------
 \vspace{-5pt}
-\section{Experience}
-  \resumeSubHeadingListStart
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\vspace{-5pt}
 \resumeSubheading{Capgemini}{Remote}
-    {Senior .NET/Vue Developer}{September 2025 - Present}
+    {Senior .NET/Vue Developer}{September 2025 -- Present}
+
+    \vspace{4pt}
+    \textbf{Project 1: Deliverable Progressor (DP) -- Electronic Package Management integrated with Teamcenter Siemens} \hfill \textit{Team of 3 developers}
     \resumeItemListStart
-    \resumeItem{Appliance Debugging Solution Development}
-    {Developing a new comprehensive solution for Electrolux that integrates appliance debugging capabilities using low-level communication protocols. The solution enables remote diagnostics and troubleshooting of home appliances through advanced protocol integration.}
-    \resumeItem{Azure Cloud Integration}
-    {Implementing and integrating various Azure solutions including Azure Active Directory for identity management, Azure Web Services for scalable application hosting, and Azure Service Bus messaging queues for reliable inter-service communication.}
-    \resumeItem{Low-Level Protocol Implementation}
-    {Designing and implementing communication layers using low-level protocols to establish reliable connections with appliance hardware for real-time monitoring and diagnostic data collection.}
-    \resumeItem{Enterprise Architecture Design}
-    {Contributing to the architectural design of enterprise-grade solutions that handle high-volume appliance data processing and provide seamless user experiences for technical support teams.}
+        \resumeItem{Technical Leadership}{Tech lead: established frontend best practices, unit/integration test rules and PR validation workflows to ensure code quality and maintainability.}
+        \resumeItem{Vue 2 to Vue 3.3 Migration}{Led the frontend migration to Vue 3.3: refactored to Composition API, updated the ecosystem and established modern development standards for the team.}
+        \resumeItem{Teamcenter API Client (Siemens)}{Designed a Teamcenter API client with centralized error handling for synchronization of MCUs, classification groups, part hierarchies (LIB01) and software types.}
+        \resumeItem{Authentication Architecture}{Designed the full authentication architecture based on \textbf{Azure AD (Microsoft Entra ID)}, \textbf{OIDC} and \textbf{PBAC}, ensuring fine-grained permission management by role and attribute.}
+        \resumeItem{Backend APIs -- Software Package Management}{Developed APIs for package creation and management: pagination, multi-criteria filtering/sorting, Item-Package Many-to-Many migration, lifecycle workflows (production state, download permissions tied to lifetime attribute).}
+        \resumeItem{Software Component Module}{Full implementation of the software component module: package-independent creation, linking existing items post-creation, auto-upload with configurable file path, detailed logging and enriched metadata (creation/modification dates, editor).}
+        \resumeItem{DevOps \& CI/CD}{Set up and maintained CI/CD pipelines, Docker optimization, and managed source control migration from Bitbucket to \textbf{GitHub} with automated validation workflows.}
     \resumeItemListEnd
-        {Technologies: .NET Core, Vue.js, Azure AD, Azure Web Services, Azure Service Bus, Low-level Protocols, Enterprise Architecture, Appliance Integration}
+
+    \vspace{4pt}
+    \textbf{Project 2: ATUM -- Firmware \& Binary Management for Home Appliances (Electrolux)} \hfill \textit{Team of 8 developers}
+    \resumeItemListStart
+        \resumeItem{Firmware \& OTA}{Developed firmware configuration UI with automatic binary generation; implemented OTA update distribution system.}
+        \resumeItem{STL Viewer Refactoring}{Replaced the existing STL viewer with \textbf{Three.js}: reduced loading time by \textbf{70\%+} (50s $\rightarrow$ $\sim$10s) on the HOB PowerController.}
+        \resumeItem{.NET 10 Migration}{Led the .NET 9 $\rightarrow$ .NET 10 migration with full dependency updates and adaptation to the latest C\# versions.}
+        \resumeItem{Azure Infrastructure}{Azure integration (Entra ID, Azure Web Services, Portainer); led a study to migrate the existing Azure VM infrastructure to a native cloud architecture.}
+        \resumeItem{Deployment Automation}{Fully automated deployment pipeline via \textbf{Docker, Ansible and CI/CD} (manual deployment $\rightarrow$ minutes); source control migration from Bitbucket to GitHub with Azure DevOps evaluation.}
+        \resumeItem{Client Requirements \& Recruitment}{Directly participated in client meetings to extract and write specifications; conducted \textbf{10 technical interviews} as part of the recruitment process.}
+    \resumeItemListEnd
+
+    {Technologies: .NET 9/10, C\# 13, Vue.js 2/3.3, Docker, Ansible, Azure Cloud, Azure AD (Microsoft Entra ID), OIDC, PBAC, SQL Server, Three.js, Teamcenter API (Siemens), GitHub Actions, CI/CD}
 
 \resumeSubheading{NeoLedge, Zarzis, Tunisia}{Remote}
-    {Software Developer}{May 2023 - September 2025}
+    {Software Developer}{May 2023 -- September 2025}
     \resumeItemListStart
-    \resumeItem{Electronic Document Signature System}
-    {Designed and implemented a comprehensive electronic signature solution including: a CLI for signing PDF files following the PADES-B standard, web extensions for browser integration, and integration with web applications to enable an end-to-end online document signature system. Successfully certified the solution with national authorities.}
-    \resumeItem{Cross-Platform Toolbox}
-    {Created and published a toolbox wrapping the CLI for Windows and macOS, ensuring compatibility with ARM and Intel architectures.}
-    \resumeItem{Installer Development}
-    {Developed installers for the toolbox and its dependencies, supporting seamless deployment on Windows and macOS.}
-    \resumeItem{Web Extension Integration}
-    {Developed a system to make the CLI accessible from web applications using native messaging hosts and browser extensions compatible with major browsers.}
-    \resumeItem{Outlook Extension Development}
-    {Designed and implemented an Outlook extension that interacts with Exchange server, handling OIDC and form authentication to streamline document management workflows.}
-    \resumeItem{Enterprise GED System Maintenance}
-    {Participated in maintaining and developing ELISE, the company's main Enterprise GED (Electronic Document Management) solution, ensuring system stability and feature enhancement.}
-    \resumeItem{Client Requirements Analysis}
-    {Conducted thorough studies of client use cases and prepared detailed reports to ensure fluid implementation and timely response to client needs.}
-    \resumeItem{CI/CD Pipeline}
-    {Prepared and maintained Azure DevOps CI/CD pipelines for seamless integration and deployment of new features.}
-    \resumeItem{Enterprise Mobile Applications}
-      {Developed and maintained enterprise mobile applications, integrating SOAP web services for seamless backend communication.}
-        \resumeItem{Certification and Compliance}
-          {Facilitated homologation of applications by conducting thorough tests and adaptations to meet eIDAS guidelines, achieving certification from TunTrust and ANCE Tunisia.}
-          \resumeItem{System Integration Research}
-    {Conducted extensive research to identify the most effective solutions for linking web applications with desktop environments. Evaluated multiple approaches, including:
-      \begin{itemize}
-        \item URI-based communication for straightforward and flexible integration.
-        \item HTTPS client-side communication for secure and robust data exchange.
-        \item WebSocket-based communication for real-time, bidirectional interaction between systems.
-      \end{itemize}
-    Implemented the selected solution to enable seamless interaction between web and desktop platforms, improving system efficiency and user experience.}
-    \resumeItem{Mobile App Modernization Research}
-    {Led research and development efforts to modernize a legacy mobile app by migrating it from Xamarin to a more advanced technology. Conducted a detailed evaluation of potential solutions, including:
-      \begin{itemize}
-        \item \textbf{Flutter:} Evaluated for its fast development cycle, hot reload feature, and support for cross-platform UIs.
-        \item \textbf{React Native:} Assessed for its extensive ecosystem, strong community support, and performance benefits through native modules.
-        \item \textbf{.NET MAUI:} Analyzed for its integration with the .NET ecosystem, backward compatibility, and suitability for enterprise solutions.
-      \end{itemize}
-    Delivered a comprehensive report to management, outlining the pros and cons of each technology and providing strategic recommendations aligned with the organization's future scalability and technical goals.}
-    \resumeItem{Legacy Application Maintenance}
-          {Maintained and enhanced a legacy UWP application to ensure continuous client support and stability.}
-
+        \resumeItem{Electronic Signature (PADES-B)}{End-to-end solution: .NET CLI, multi-platform toolkit with installers (Windows/macOS, ARM/Intel), browser extensions via native messaging and web integration. Certified by TunTrust and ANCE Tunisia (eIDAS standards).}
+        \resumeItem{Web Extension Integration}{CLI made accessible from web applications via native messaging hosts and cross-browser compatible extensions.}
+        \resumeItem{Outlook Extension}{Outlook extension interacting with Exchange Server with OIDC and form-based authentication management for document management workflows.}
+        \resumeItem{Enterprise DMS}{Maintenance and development of ELISE, NeoLedge's main Document Management System, ensuring stability and continuous feature improvement.}
+        \resumeItem{Client Requirements Analysis}{In-depth analysis of client use cases and preparation of detailed reports to ensure smooth implementation.}
+        \resumeItem{CI/CD \& Mobile Apps}{CI/CD pipelines with Azure DevOps; development and maintenance of enterprise mobile applications with SOAP web service integration.}
+        \resumeItem{Certification \& Compliance}{Application certification process according to eIDAS standards; certification obtained from TunTrust and ANCE Tunisia.}
+        \resumeItem{System Integration R\&D}{Study and comparison of web-to-desktop integration solutions: URI communication, local HTTPS and WebSocket.}
+        \resumeItem{Mobile Modernization R\&D}{Migration study from Xamarin to Flutter, React Native and .NET MAUI with a detailed report presented to management.}
+        \resumeItem{Legacy Maintenance}{Maintenance and improvement of a legacy UWP application to ensure continuous client support.}
     \resumeItemListEnd
-        {Technologies: C\#, .NET Core, CLI Development, Desktop Development, Extension Development, Electronic Signature, Web Development, Vue.js, Azure DevOps, Microsoft Azure, OIDC, Exchange Server, Document Management}
+        {Technologies: C\#, .NET Core, CLI Development, Desktop Development, Browser Extensions, Electronic Signature, Vue.js, Azure DevOps, OIDC, Exchange Server, Document Management}
+\resumeSubHeadingListEnd
 
-\resumeSubheading{ NeoLedge, Zarzis, Tunisia  }{}
-    {Mobile Developer (End of studies internship)}{Feb 2023 - May 2023}
-    \resumeItemListStart
-        \resumeItem{}
-          {Contributed to the creation of a cross-platform mobile application for managing and signing electronic documents.}
-          \resumeItem{}
-          {Creation of NeoPDFViewer, an open-source file viewer, for seamless document visualization and interaction within the application.}
-      \resumeItemListEnd
-        {Technologies: Mobile development, Capacitor, Jest, Firebase, Framework Ionic, TypeScript, JavaScript, Scrum, Agile, Microsoft Azure}
-        
+%----------EDUCATION-----------------
 \vspace{-5pt}
-\resumeSubheading{ NeoLedge, Zarzis, Tunisia  }{Remote}
-    {FrontEnd Developer (Internship)}{Jul 2022 - Nov 2022}
-    \resumeItemListStart
-        \resumeItem{}
-          {Contributed to the existing NUI package by creating new components that will be used in future NeoLedge projects.}
-          \resumeItem{}
-          {Contribution to the development of a new Survey application for the company.}
-      \resumeItemListEnd
-        {Technologies: Vue 2.6, TypeScript, StoryBook, CSS, github, Scrum, Agile, Microsoft Azure, C\#, .NET 4.8}
-        
-\vspace{-5pt}
-    \resumeSubheading{ Scouts, Zarzis, Tunisia  }{Remote}
-    {FullStack Developer/Product Owner }{Jul 2022 - Aug 2022}
-    \resumeItemListStart
-        \resumeItem{Needs analysis}
-          {Reviewed the current system and uncovered its flaws.}
-          \resumeItem{Managment}
-          {Created user stories, managed and prioritized the product backlog.}
-          \resumeItem{Development}
-          {Developed and created parts of the system while maintaining high standards of code quality .}
-          
-      \resumeItemListEnd
-        {Technologies: NuxtJs, Scrum, Agile, Vuetify, TypeScript, Laravel9, github, ZenHub, GitHub Ci/Cd Actions}
-        
-\vspace{-5pt}
- \resumeSubheading{ TunVita  }{Remote}
-    {FullStack Developer (Internship)}{Jan 2022 - Feb 2022}
-    \resumeItemListStart
-        \resumeItem{Planning and needs analysis}
-          {Reviewed the current employee management system and find the flaws.}
-          \resumeItem{Desing of the system}
-          {Designed the use case, the class and all necessary diagrams.}
-          \resumeItem{Developmenent}{Developed the application using the Laravel/Vue stack while maintaining high standards of code quality and thoughtful application design.}
-      \resumeItemListEnd
-        {Technologies: Laravel 8, Vue 2.6, JavaScript, Bootstrap-vue, github}
-        
-\vspace{-5pt}
-
-    \resumeSubheading{ TunVita  }{Remote}
-    {FullStack Developer (Internship)}{Jul 2021 - Aug 2021}
-    \resumeItemListStart
-          \resumeItem{Front-end Development}{Developed a static website without and with template.}
-          \resumeItem{Back-end Development}{Developed an adminPanel that manages (read, reply,
-delete) the messages received from the contact form using PHP
-and SQL.}
-      \resumeItemListEnd
-        {Technologies: HTML, CSS, Js, PHP, MySql, SQL}
-        \resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------------
-\section{~~Education}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Higher Institue Of Informatics}{Ariana, Tunisia}
-      {Master in Open Source Software Engineering}{Sep 2023 - June 2025}
-      
+\section{Education}
+\resumeSubHeadingListStart
     \resumeSubheading
-      {Higher Institue Of Technlogical Studies}{Bizerte, Tunisia}
-      {Bachelor in information system technology, excellent honors}{Sep 2020 - June 2023}
-      
-    \resumeSubHeadingListEnd
-    
-%-----------PROJECTS-----------------
+    {Institut Supérieur d'Informatique}{Ariana, Tunisia}
+    {Master's Degree in Open Source Software Engineering}{Sep 2023 -- Jun 2025}
+    \resumeSubheading
+    {Institut Supérieur des Études Technologiques}{Bizerte, Tunisia}
+    {Bachelor's Degree in Information Systems Technology, Honours}{Sep 2020 -- Jun 2023}
+\resumeSubHeadingListEnd
+
+%----------PROJECTS-----------------
 \vspace{-5pt}
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Bike tracking and after sales service}{(Oct 2022 -Jan 2023)
- Contributed to the development of the pixiimotors web/mobile application, which enables scooter owners to track and manage their motorcycles remotely, and set up an after-sales system enabling customers to communicate with the company using a ticketing system.
+\resumeSubItem{Bike Tracking \& After-Sales Service}{(Oct 2022 -- Jan 2023)
+ Contributed to the Pixii Motors web/mobile application, allowing scooter owners to track and manage their vehicles remotely. Implemented an after-sales support system based on a ticketing system.
 \\ Tech: SpringBoot, Nodejs, ExpressJs, MongoDB, Microservice, Angular, Flutter, GitHub}
 \vspace{2pt}
-\resumeSubItem{Scouts system}{(Jun 2022 - now)
- Contributed to the development of the Scout Volunteer Project, which is an application to manage registration and enrollment in the organization, manage monetary/material resources, and to allow users to create formal applications, schedule events and manage their groups.
-\\ Tech: Nuxt, TypeScript, Vuetify, Laravel Zenhub, GitHub }
-\vspace{2pt}
-\resumeSubItem{ISETB - School management system
- }{(Mar 2022 - Jun 2021) 
- Contributed to the development of the ISETB application, which allows to manage all the actions that take place within the institute, as a member of the development team.
- \\\small{This project was developed in two different technology stacks, Laravel/vue and SpringBoot/Thymleaf.}
-\\ Tech: VueJs2, JavaScript, Laravel, SpringBoot, Java, Thymleaf, Scrum, Agile, Zenhub, GitHub }
-
+\resumeSubItem{Scout Management System}{(Jun 2022 -- Present)
+ Contributed to a system managing registrations and memberships, monetary and material resources, events, and user groups for a scout organization.
+\\ Tech: Nuxt, TypeScript, Vuetify, Laravel, Zenhub, GitHub}
 \resumeSubHeadingListEnd
 
-%-----------LICENSES AND CERTIFICATIONS-----------------
-\section{Licenses and Certifications}
+%----------CERTIFICATIONS-----------------
+\vspace{-5pt}
+\section{Certifications}
 \resumeSubHeadingListStart
-    \resumeSubItem{Google Cloud Essentials Badge}
-        {Google Cloud Education; Issued: Feb 2022; Certification ID: 1740267}
-        {\href{https://www.cloudskillsboost.google/public_profiles/b6cf5253-6dac-4b50-8a0d-7129daad930b/badges/1740267}{View Credential}}
-    \resumeSubItem{SQL Course Certificate}
-        {Sololearn; Issued: Feb 2022; Certification ID: 20332926-1060}
-        {\href{https://www.sololearn.com/certificates/course/en/20332926/1060/landscape/png}{View Credential}}
-    \resumeSubItem{Scrum Fundamentals Certified}
-        {SCRUMstudy - Accreditation Body for Scrum and Agile; Issued: Feb 2022; Certification ID: 900581}
-        {\href{https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-MohamedYoussefChlendi-900581.pdf}{View Credential}}
-    \resumeSubItem{Java Course Certificate}
-        {Sololearn; Issued: Jan 2022; Certification ID: 20332926-1068}
-        {\href{https://www.sololearn.com/certificates/course/en/20332926/1068/landscape/png}{View Credential}}
-    \resumeSubItem{JavaScript Course Certificate}
-        {Sololearn; Issued: Jan 2022; Certification ID: 20332926-1024}
-        {\href{https://www.sololearn.com/certificates/course/en/20332926/1024/landscape/png}{View Credential}}
-    \resumeSubItem{PHP Course Certificate}
-        {Sololearn; Certification ID: 1059-20332926}
-        {\href{https://www.sololearn.com/Certificate/1059-20332926/pdf/}{View Credential}}
-    \resumeSubItem{Financial Management Training}
-        {ADDCI-UN; Issued: Aug 2018}
+\resumeSubItem{Google Cloud Essentials Badge}
+    {Google Cloud Education; Issued: February 2022; ID: 1740267}
+    {\href{https://www.cloudskillsboost.google/public_profiles/b6cf5253-6dac-4b50-8a0d-7129daad930b/badges/1740267}{View Certification}}
+\resumeSubItem{Scrum Fundamentals Certificate}
+    {SCRUMstudy; Issued: February 2022; ID: 900581}
+    {\href{https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-MohamedYoussefChlendi-900581.pdf}{View Certification}}
+\resumeSubItem{Advanced C\# Programming in .NET Core}
+    {Coursera / EDUCBA; Issued: November 2025}
+    {\href{https://coursera.org/verify/AHZ3PB7VHVW0}{View Certification}}
+\resumeSubItem{Microsoft Azure for ASP.NET Core}
+    {Coursera / Packt; Issued: September 2025}
+    {\href{https://coursera.org/verify/HTH0OZA64L2Z}{View Certification}}
+\resumeSubItem{Performance Optimization and Scalability}
+    {Coursera / Microsoft; Issued: January 2026}
+    {\href{https://coursera.org/verify/QW1S6J4EDX8C}{View Certification}}
+\resumeSubItem{AWS Artificial Intelligence Practitioner Learning Plan}
+    {AWS Training \& Certification; Issued: September 2025}{}
+\resumeSubItem{Gateway to Architecture (Modules 0--4)}
+    {Capgemini University; Issued: January 2026}{}
 \resumeSubHeadingListEnd
 
-
-%-----------Awards-----------------
-\section{Honors and Awards}
-\begin{description}[font=$\bullet$]
-\item {Certificate of encouragement - Issued by head of IT department iset bizerte - Jan 2021}
-\end{description}
-
+%----------VOLUNTEER EXPERIENCE-----------------
 \vspace{-2pt}
 \section{Volunteer Experience}
-  \resumeSubHeadingListStart
-	\resumeItem
-    {Vice-Chair}
-    {RAS IEEE ISET Bizerte SB}
-    \resumeItem
-    {Media and Communication manager}
-    {Tunisian SolidWorks
-Users Group ISET Bizerte}
-   
-\vspace{5pt}
+\resumeSubHeadingListStart
+\resumeItem{Vice-President}{RAS IEEE ISET Bizerte Student Branch}
+\resumeItem{Media \& Communication Manager}{Tunisian SolidWorks Users Group ISET Bizerte}
 \resumeSubHeadingListEnd
 
 \end{document}
